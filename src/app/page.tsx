@@ -73,14 +73,6 @@ export default function Home() {
               <ChevronDown size={18} className="text-[#003d7a]" />
             </div>
           </nav>
-
-          {/* Login Button */}
-          <Button
-            variant="outline"
-            className="text-[#00a8cc] border-2 border-[#00a8cc] font-bold px-6 hover:bg-[#00a8cc] hover:text-white bg-transparent"
-          >
-            Login
-          </Button>
         </div>
       </header>
 
@@ -116,30 +108,11 @@ export default function Home() {
 
           {/* Right Side - Images */}
           <div className="relative h-96 hidden lg:block">
-            {/* Top Image Card */}
-            <div className="absolute top-0 right-0 w-72 h-56 bg-white rounded-3xl shadow-xl p-3 transform rotate-6 hover:rotate-0 transition-transform">
-              <img
-                src="/students-group-photo-university.jpg"
-                alt="Students"
-                className="w-full h-full object-cover rounded-2xl"
-              />
-              {/* Orange Circle Decoration */}
-              <div className="absolute -bottom-8 -right-8 w-24 h-24 border-8 border-orange-400 rounded-full"></div>
-            </div>
-
-            {/* Bottom Image Card */}
-            <div className="absolute bottom-0 left-0 w-72 h-56 bg-white rounded-3xl shadow-xl p-3 transform -rotate-3 hover:rotate-0 transition-transform">
-              <img
-                src="/group-photo-students-outdoor.jpg"
-                alt="Group Photo"
-                className="w-full h-full object-cover rounded-2xl"
-              />
-            </div>
-
-            {/* Green Squiggle Decoration */}
-            <div className="absolute bottom-20 left-40 text-[#00ff00] font-black text-6xl opacity-60">
-              ⚡
-            </div>
+            <img
+              src="/assets/hello.png"
+              alt="Group Photo"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </main>
