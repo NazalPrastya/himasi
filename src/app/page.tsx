@@ -1,5 +1,6 @@
 "use client";
 
+import CardTotal from "@/components/card/card-total";
 import {
   Users,
   Building2,
@@ -43,7 +44,7 @@ export default function Home() {
             <section className="container mx-auto px-8 pb-20 max-w-7xl">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Stat 1 */}
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-5xl mb-3 flex justify-center">
                     <Users
                       size={48}
@@ -55,52 +56,11 @@ export default function Home() {
                   <div className="text-white text-sm font-semibold">
                     Anggota Aktif
                   </div>
-                </div>
-
-                {/* Stat 2 */}
-                <div className="text-center">
-                  <div className="text-5xl mb-3 flex justify-center">
-                    <Building2
-                      size={48}
-                      className="text-cyan-400"
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                  <div className="text-white font-black text-2xl">5</div>
-                  <div className="text-white text-sm font-semibold">
-                    Departemen
-                  </div>
-                </div>
-
-                {/* Stat 3 */}
-                <div className="text-center">
-                  <div className="text-5xl mb-3 flex justify-center">
-                    <Briefcase
-                      size={48}
-                      className="text-yellow-300"
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                  <div className="text-white font-black text-2xl">10+</div>
-                  <div className="text-white text-sm font-semibold">
-                    Program Kerja
-                  </div>
-                </div>
-
-                {/* Stat 4 */}
-                <div className="text-center">
-                  <div className="text-5xl mb-3 flex justify-center">
-                    <Handshake
-                      size={48}
-                      className="text-cyan-300"
-                      strokeWidth={1.5}
-                    />
-                  </div>
-                  <div className="text-white font-black text-2xl">10+</div>
-                  <div className="text-white text-sm font-semibold">
-                    Kolaborasi Eksternal
-                  </div>
-                </div>
+                </div> */}
+                <CardTotal title="Anggota Aktif" value="150" icon={<Users size={48} className="text-orange-400" strokeWidth={1.5} />} isPlus={true} />
+                <CardTotal title="Departemen" value="5" icon={<Building2 size={48} className="text-blue-500" strokeWidth={1.5} />} isPlus={true} />
+                <CardTotal title="Program Kerja" value="10" icon={<Briefcase size={48} className="text-yellow-400" strokeWidth={1.5} />} isPlus={true} />
+                <CardTotal title="Kolaborasi Eksternal" value="10" icon={<Handshake size={48} className="text-green-400" strokeWidth={1.5} />} isPlus={true} />
               </div>
             </section>
           </div>
