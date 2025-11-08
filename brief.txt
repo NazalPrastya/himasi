@@ -1,0 +1,19 @@
+Buatkan design landing page untuk website organisasi bernama HIMASI (Himpunan Mahasiswa Sistem Informasi). saya pengen design nya interactive dan kayak ada motion ajax/frammer motion dibuat mengugnakan nextjs, shadcn, dan frammer motion, saya pengen temanya tu retro gitu loh
+
+isi websitenya:
+Tentang himasi: 
+himasi itu apa?
+visi & misi
+tujuan
+
+Struktur: 
+(dropdown)
+Dept. Akademik & Keilmuan: struktur divisi, proker
+Dept. MedPub, dll
+
+Berita/Artikel: informasi/artikel terkait event/pembelajaran, Dokumentasi dll
+
+Keanggotaan:
+-Kotak Aspirasi: Form
+-FAQ: 
+-CTA → ajakan gabung jadi anggota himasi
