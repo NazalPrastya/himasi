@@ -1,81 +1,16 @@
 "use client";
 
 import {
-  ChevronDown,
   Users,
   Building2,
   Briefcase,
   Handshake,
   ArrowRight,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-[#003d7a] via-[#0052a3] to-[#00a8cc]">
-      {/* Header Navigation */}
-      <header className="container mx-auto px-8 py-4 max-w-7xl">
-        <div className="bg-white rounded-3xl px-8 py-4 flex items-center justify-between shadow-lg">
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-12 h-12 bg-orange-400 rounded-lg flex items-center justify-center">
-              <div className="text-white font-bold text-xl">📚</div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xs font-bold text-orange-500">
-                HUBUNGAN MASYARAKAT
-              </span>
-              <span className="text-sm font-black text-[#003d7a]">
-                SISTEM INFORMASI
-              </span>
-              <span className="text-xs text-gray-600">
-                Universitas Terbuka Bogor
-              </span>
-            </div>
-          </div>
-
-          {/* Navigation Menu */}
-          <nav className="hidden md:flex items-center gap-8">
-            <a
-              href="#"
-              className="text-[#003d7a] font-semibold hover:text-[#0052a3]"
-            >
-              Home
-            </a>
-            <a
-              href="#"
-              className="text-[#003d7a] font-semibold hover:text-[#0052a3]"
-            >
-              Tentang HIMASI
-            </a>
-            <div className="flex items-center gap-1 cursor-pointer">
-              <a
-                href="#"
-                className="text-[#003d7a] font-semibold hover:text-[#0052a3]"
-              >
-                Struktur Organisasi
-              </a>
-              <ChevronDown size={18} className="text-[#003d7a]" />
-            </div>
-            <a
-              href="#"
-              className="text-[#003d7a] font-semibold hover:text-[#0052a3]"
-            >
-              Berita
-            </a>
-            <div className="flex items-center gap-1 cursor-pointer">
-              <a
-                href="#"
-                className="text-[#003d7a] font-semibold hover:text-[#0052a3]"
-              >
-                Keanggotan
-              </a>
-              <ChevronDown size={18} className="text-[#003d7a]" />
-            </div>
-          </nav>
-        </div>
-      </header>
-
+    <div className="min-h-screen bg-linear-to-br from-[#003d7a] via-[#0052a3] to-[#00a8cc] pt-24">
       {/* Main Content */}
       <main className="container mx-auto px-8 py-20 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -104,6 +39,70 @@ export default function Home() {
               Gabung Himasi
               <ArrowRight size={20} />
             </button>
+            {/* Stats Section */}
+            <section className="container mx-auto px-8 pb-20 max-w-7xl">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                {/* Stat 1 */}
+                <div className="text-center">
+                  <div className="text-5xl mb-3 flex justify-center">
+                    <Users
+                      size={48}
+                      className="text-orange-400"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <div className="text-white font-black text-2xl">150+</div>
+                  <div className="text-white text-sm font-semibold">
+                    Anggota Aktif
+                  </div>
+                </div>
+
+                {/* Stat 2 */}
+                <div className="text-center">
+                  <div className="text-5xl mb-3 flex justify-center">
+                    <Building2
+                      size={48}
+                      className="text-cyan-400"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <div className="text-white font-black text-2xl">5</div>
+                  <div className="text-white text-sm font-semibold">
+                    Departemen
+                  </div>
+                </div>
+
+                {/* Stat 3 */}
+                <div className="text-center">
+                  <div className="text-5xl mb-3 flex justify-center">
+                    <Briefcase
+                      size={48}
+                      className="text-yellow-300"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <div className="text-white font-black text-2xl">10+</div>
+                  <div className="text-white text-sm font-semibold">
+                    Program Kerja
+                  </div>
+                </div>
+
+                {/* Stat 4 */}
+                <div className="text-center">
+                  <div className="text-5xl mb-3 flex justify-center">
+                    <Handshake
+                      size={48}
+                      className="text-cyan-300"
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <div className="text-white font-black text-2xl">10+</div>
+                  <div className="text-white text-sm font-semibold">
+                    Kolaborasi Eksternal
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
 
           {/* Right Side - Images */}
@@ -116,65 +115,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      {/* Stats Section */}
-      <section className="container mx-auto px-8 pb-20 max-w-7xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {/* Stat 1 */}
-          <div className="text-center">
-            <div className="text-5xl mb-3 flex justify-center">
-              <Users size={48} className="text-orange-400" strokeWidth={1.5} />
-            </div>
-            <div className="text-white font-black text-2xl">150+</div>
-            <div className="text-white text-sm font-semibold">
-              Anggota Aktif
-            </div>
-          </div>
-
-          {/* Stat 2 */}
-          <div className="text-center">
-            <div className="text-5xl mb-3 flex justify-center">
-              <Building2
-                size={48}
-                className="text-cyan-400"
-                strokeWidth={1.5}
-              />
-            </div>
-            <div className="text-white font-black text-2xl">5</div>
-            <div className="text-white text-sm font-semibold">Departemen</div>
-          </div>
-
-          {/* Stat 3 */}
-          <div className="text-center">
-            <div className="text-5xl mb-3 flex justify-center">
-              <Briefcase
-                size={48}
-                className="text-yellow-300"
-                strokeWidth={1.5}
-              />
-            </div>
-            <div className="text-white font-black text-2xl">10+</div>
-            <div className="text-white text-sm font-semibold">
-              Program Kerja
-            </div>
-          </div>
-
-          {/* Stat 4 */}
-          <div className="text-center">
-            <div className="text-5xl mb-3 flex justify-center">
-              <Handshake
-                size={48}
-                className="text-cyan-300"
-                strokeWidth={1.5}
-              />
-            </div>
-            <div className="text-white font-black text-2xl">10+</div>
-            <div className="text-white text-sm font-semibold">
-              Kolaborasi Eksternal
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
